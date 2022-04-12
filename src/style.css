@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+
+
+/* BackGround Colors */
+.gradient1 {
+  background: #136a8a;
+  background: -webkit-linear-gradient(to right, #267871, #136a8a);
+  background: linear-gradient(to right, #267871, #136a8a);
+}
+
+.gradient2 {
+  background: #3ca55c;
+  background: -webkit-linear-gradient(to right, #b5ac49, #3ca55c);
+  background: linear-gradient(to right, #b5ac49, #3ca55c);
+}
+
+.gradient3 {
+  background: #f2709c;
+  background: -webkit-linear-gradient(to right, #ff9472, #f2709c);
+  background: linear-gradient(to right, #ff9472, #f2709c);
+}
+
+.gradient4 {
+  background: #134e5e;
+  background: -webkit-linear-gradient(to right, #71b280, #134e5e);
+  background: linear-gradient(to right, #71b280, #134e5e);
+}
+
+.gradient5 {
+  background: #614385;
+  background: -webkit-linear-gradient(to right, #516395, #614385);
+  background: linear-gradient(to right, #516395, #614385);
+}
+
+.gradient6 {
+  background: #ff8008;
+  background: -webkit-linear-gradient(to right, #ffc837, #ff8008);
+  background: linear-gradient(to right, #ffc837, #ff8008);
+}
+
+.gradient7 {
+  background: #aa076b;
+  background: -webkit-linear-gradient(to right, #61045f, #aa076b);
+  background: linear-gradient(to right, #61045f, #aa076b);
+}
+
+.gradient8 {
+  background: #d31027;
+  background: -webkit-linear-gradient(to right, #ea384d, #d31027);
+  background: linear-gradient(to right, #ea384d, #d31027);
+}
+
+/* Wave CSS */
+.waveContainer {
+  /* position: relative; */
+  width: 100%;
+  /* height: 100vh; */
+  overflow: hidden;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wave.png);
+  background-size: 1000px 100px;
+}
+
+.wave1 {
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+.wave2 {
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.wave3 {
+  animation: animate 10s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15;
+}
+
+.wave4 {
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+@keyframes animate {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    background-position-x: 0px;
+  }
+
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+.todoListContainer {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: white;
+  width: 23%;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.blackLine {
+  width: 100%;
+  height: 28px;
+  border-radius: 10px 10px 0 0;
+  margin: 0;
+}
+
+.toDoListTitle {
+  font-style: normal;
+  width: 100%;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 17px;
+  /* margin-bottom: 38px; */
+  color: #000000;
+  font-family: roboto;
+  font-family: "Roboto", sans-serif;
+}
+
+
+.sortIconDiv {
+  width: 90%;
+  display: flex;
+  justify-content: end;
+}
+
+.sortIcon {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  text-align: end;
+}
+
+.todoListParent {
+  border: 1px solid #C4C4C4;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.listsLi {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 22px;
+  padding-right: 22px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.listİnputİtem {
+  width: 100%;
+  border: 0;
+}
+
+.listİnputİtem {
+  border: none;
+  outline: none;
+}
+
+.listİnputİtem:active {
+  border: none;
+  outline: none;
+}
+
+.listXIcon {
+  border-radius: 10px;
+  transition: 0.7s;
+}
+
+.listXIcon:hover {
+  background-color: #787878;
+
+}
+
+
+.buttonDiv {
+  margin: auto;
+  width: 40%;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  margin-top: 18px;
+  border: 20px;
+  background-color: grey;
+  /* padding: 20px; */
+  border-radius: 50px;
+  transition: all 0.7s;
+  margin-bottom: 20px;
+}
+
+.buttonDiv:hover {
+  opacity: 0.8;
+  width: 60%;
+  background-color: #3d3d3d;
+}
+
+.buttonPlus {
+  background-color: rgb(166, 166, 166);
+  padding: 12px;
+  padding-left: 18px;
+  padding-right: 18px;
+  border-radius: 80px;
+  width: 5%;
+  color: white;
+}
+
+.buttonAdd {
+  color: white;
+  font-family: roboto;
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+}
+
+
+
+
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .container {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 48%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 70%;
+  }
+}
