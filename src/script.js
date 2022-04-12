@@ -88,10 +88,10 @@ class TodoService {
         t1.title.toUpperCase() > t2.title.toUpperCase() ? 1 : -1
       );
     let buttonChange = document.querySelector("#sort-btn");
-    buttonChange.setAttribute("src", "../img/blackdown.svg");
+    buttonChange.setAttribute("src", "./img/blackdown.svg");
     if (!direction) {
       todos.reverse();
-      buttonChange.setAttribute("src", "../img/blackup.svg");
+      buttonChange.setAttribute("src", "./img/blackup.svg");
     }
     this._todos = todos;
     this._commit();
@@ -185,7 +185,7 @@ class DOMManipulator {
 
       const delBtn = document.createElement("img");
       delBtn.className = "listXIcon";
-      delBtn.setAttribute("src", "../img/xgrey.svg");
+      delBtn.setAttribute("src", "./img/xgrey.svg");
       delBtn.addEventListener("click", (_) => this._handleDelete(t.id));
       item.append(delBtn);
       return item;
