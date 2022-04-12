@@ -266,6 +266,7 @@ let count = true;
 function randomNum(min, max) {
   var randomResult = Math.floor(Math.random() * (max - min)) + min;
   document.querySelector("body").classList.add(`${gradientArr[randomResult]}`);
+  document.querySelector("#add-btn").classList.add(`${gradientArr[randomResult]}`);
   return randomResult;
 }
 randomNum(0, 8);
