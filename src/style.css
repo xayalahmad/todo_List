@@ -166,6 +166,7 @@
 }
 
 .sortIcon {
+  cursor: pointer;
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: end;
@@ -210,6 +211,7 @@
 }
 
 .listXIcon {
+  cursor: pointer;
   border-radius: 10px;
   transition: 0.7s;
 }
