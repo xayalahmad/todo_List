@@ -169,8 +169,12 @@
   margin-top: 20px;
   margin-bottom: 10px;
   text-align: end;
+  opacity: 0.6;
+  transition: all 0.7s;
 }
-
+.sortIcon:hover{
+  opacity: 1;
+}
 .todoListParent {
   border: 1px solid #C4C4C4;
   box-sizing: border-box;

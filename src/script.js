@@ -88,10 +88,10 @@ class TodoService {
         t1.title.toUpperCase() > t2.title.toUpperCase() ? 1 : -1
       );
     let buttonChange = document.querySelector("#sort-btn");
-    buttonChange.setAttribute("src", "./img/blackdown.svg");
+    buttonChange.setAttribute("src", "./img/blackup.svg");
     if (!direction) {
       todos.reverse();
-      buttonChange.setAttribute("src", "./img/blackup.svg");
+      buttonChange.setAttribute("src", "./img/blackdown.svg");
     }
     this._todos = todos;
     this._commit();
