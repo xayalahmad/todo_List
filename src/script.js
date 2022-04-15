@@ -81,17 +81,14 @@ class TodoService {
    * Sort todo array.
    * @param {boolean?} direction Sorting direction. Default is true.
    */
-  sortTodos(direction = true) {
+   sortTodos(direction = true) {
     const todos = [...this._todos]
       .filter((t) => t.title)
       .sort((t1, t2) =>
         t1.title.toUpperCase() > t2.title.toUpperCase() ? 1 : -1
       );
-    let buttonChange = document.querySelector("#sort-btn");
-    buttonChange.setAttribute("src", "./img/blackup.svg");
     if (!direction) {
       todos.reverse();
-      buttonChange.setAttribute("src", "./img/blackdown.svg");
     }
     this._todos = todos;
     this._commit();
@@ -225,7 +222,14 @@ class DOMManipulator {
   _handleSort() {
     this._service.sortTodos(this._sortDir);
     this._sortDir = !this._sortDir;
-    this.displayTodos();
+    const buttonChange = document.querySelector("#sort-btn");
+    if(this._sortDir){
+      buttonChange.setAttribute("src", "./img/blackdown.svg");
+    }
+    else{
+      buttonChange.setAttribute("src", "./img/blackup.svg");
+    }
+    this.displayTodos()
   }
 
   _showError(message) {
